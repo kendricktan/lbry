@@ -1,6 +1,8 @@
 import logging
+from os_helpers import load_helpers
+load_helpers()
 
 __version__ = "0.19.0rc30"
-version = tuple(__version__.split('.'))
 
+version = tuple(__version__.split('.'))
 logging.getLogger(__name__).addHandler(logging.NullHandler())
